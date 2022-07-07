@@ -41,18 +41,18 @@ public class ChangePasswordCommand implements CommandExecutor {
                         pd.getData().set(uuid + ".pass", new2);
                         pd.saveData();
 
-                        p.sendMessage(plugin.getConfig().getString("Command.succeschangepass").replace("&", ""));
+                        p.sendMessage(plugin.getConfig().getString("Command.succeschangepass").replace("&", "§"));
                     } else {
-                        p.kickPlayer(plugin.getConfig().getString("Command.yourpassword").replace("&", ""));
+                        p.kickPlayer(plugin.getConfig().getString("Command.yourpassword").replace("&", "§"));
                     }
                 } else {
-                    p.sendMessage(plugin.getConfig().getString("Command.yourpass").replace("&", ""));
+                    p.sendMessage(plugin.getConfig().getString("Command.yourpass").replace("&", "§"));
                 }
             } else {
-                p.sendMessage(plugin.getConfig().getString("Command.changepassusage").replace("&", ""));
+                p.sendMessage(plugin.getConfig().getString("Command.changepassusage").replace("&", "§"));
             }
         } else {
-            p.sendMessage(plugin.getConfig().getString("Command.changepasslogin").replace("&", ""));
+            p.sendMessage(plugin.getConfig().getString("Command.changepasslogin").replace("&", "§"));
         }
 
         return false;

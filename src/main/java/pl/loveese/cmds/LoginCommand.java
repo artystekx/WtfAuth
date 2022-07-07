@@ -39,18 +39,18 @@ public class LoginCommand implements CommandExecutor {
                     if(pass.equals(actualPass))	{
                         onJoin.loggetIn.put(uuid, true);
 
-                        p.sendMessage(plugin.getConfig().getString("Command.loginsucces").replace("&", ""));
+                        p.sendMessage(plugin.getConfig().getString("Command.loginsucces").replace("&", "§"));
                     } else {
-                        p.kickPlayer(plugin.getConfig().getString("Command.errorpassword").replace("&", ""));
+                        p.kickPlayer(plugin.getConfig().getString("Command.errorpassword").replace("&", "§"));
                     }
                 } else {
-                    p.sendMessage(plugin.getConfig().getString("Command.noregister").replace("&", ""));
+                    p.sendMessage(plugin.getConfig().getString("Command.noregister").replace("&", "§"));
                 }
             } else {
-                p.sendMessage(plugin.getConfig().getString("Command.usage").replace("&", ""));
+                p.sendMessage(plugin.getConfig().getString("Command.usage").replace("&", "§"));
             }
         } else {
-            p.sendMessage(plugin.getConfig().getString("Command.succeslogin").replace("&", ""));
+            p.sendMessage(plugin.getConfig().getString("Command.succeslogin").replace("&", "§"));
         }
         return false;
     }

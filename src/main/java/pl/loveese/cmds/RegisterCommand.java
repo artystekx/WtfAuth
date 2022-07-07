@@ -39,15 +39,15 @@ public class RegisterCommand implements CommandExecutor {
 
                     onJoin.loggetIn.put(uuid, true);
 
-                    p.sendMessage(plugin.getConfig().getString("Command.successregister").replace("&", ""));
+                    p.sendMessage(plugin.getConfig().getString("Command.successregister").replace("&", "§"));
                 } else {
-                    p.sendMessage(plugin.getConfig().getString("Command.passworderror").replace("&", ""));
+                    p.sendMessage(plugin.getConfig().getString("Command.passworderror").replace("&", "§"));
                 }
             } else {
-                p.sendMessage(plugin.getConfig().getString("Command.usageregister").replace("&", ""));
+                p.sendMessage(plugin.getConfig().getString("Command.usageregister").replace("&", "§"));
             }
         } else {
-            p.sendMessage(plugin.getConfig().getString("Command.playerregister").replace("&", ""));
+            p.sendMessage(plugin.getConfig().getString("Command.playerregister").replace("&", "§"));
         }
 
         return false;
