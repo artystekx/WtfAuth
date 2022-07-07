@@ -7,3 +7,6 @@ Command:
   loginsucces: "&eZostales zalogowany!"
   errorpassword: "&eZle wpisales haslo! \n&7Sprobuj ponownie!"
   noregister: "&eUzyj komendy: &7/register haslo haslo /n&eNie jestes zarejestrowany!"
+Events:
+  dropitem: true
+  pickupitem: true

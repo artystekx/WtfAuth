@@ -1,4 +1,4 @@
-package pl.loveese.playerdata;
+package pl.loveese.data;
 
 import java.io.File;
 import java.io.IOException;

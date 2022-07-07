@@ -9,7 +9,7 @@ import org.bukkit.entity.Player;
 
 import pl.loveese.WtfAuth;
 import pl.loveese.events.onJoin;
-import pl.loveese.playerdata.PlayerData;
+import pl.loveese.data.PlayerData;
 
 public class ChangePasswordCommand implements CommandExecutor {
 

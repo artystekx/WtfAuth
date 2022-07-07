@@ -7,9 +7,8 @@ softdepend: [PlaceholderAPI]
 
 commands:
   register:
-    aliases: [reg, zarejestruj]
   login:
-    aliases: [l, log, zaloguj]
   changepassword:
-    aliases: [changepass, cp, zmienhaslo]
   info:
+  wtfauthadmin:
+    aliases: [waa, wa, adminauth]
