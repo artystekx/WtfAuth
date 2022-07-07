@@ -7,6 +7,7 @@ import pl.loveese.cmds.LoginCommand;
 import pl.loveese.cmds.RegisterCommand;
 import pl.loveese.events.onJoin;
 import pl.loveese.events.onMove;
+import pl.loveese.events.onPlayerCommand;
 import pl.loveese.playerdata.PlayerData;
 
 public class WtfAuth extends JavaPlugin {
@@ -28,6 +29,7 @@ public class WtfAuth extends JavaPlugin {
 
         getServer().getPluginManager().registerEvents(new onJoin(), this);
         getServer().getPluginManager().registerEvents(new onMove(), this);
+        getServer().getPluginManager().registerEvents(new onPlayerCommand(), this);
     }
 
 }
