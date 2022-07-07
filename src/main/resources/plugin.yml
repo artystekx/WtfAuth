@@ -3,7 +3,7 @@ version: '${project.version}'
 main: pl.loveese.WtfAuth
 api-version: 1.18
 author: loveese
-softdepend: [PlaceholderAPI]
+softdepend: [PlaceholderAPI, LuckPerms, ProtocolLib]
 
 commands:
   register:
