@@ -4,6 +4,7 @@ import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import pl.loveese.data.PlayerData;
+import pl.loveese.events.onJoin;
 
 public class Placeholder extends PlaceholderExpansion {
 
@@ -67,7 +68,9 @@ public class Placeholder extends PlaceholderExpansion {
             return player.getName();
         }
 
-
+        if(identifier.equalsIgnoreCase("test")){
+            return getAuthor(); // no use this
+        }
 
         return null;
     }
