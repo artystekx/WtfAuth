@@ -1,8 +1,9 @@
-name: AuthLo
+name: WtfAuth
 version: '${project.version}'
 main: pl.loveese.Main
 api-version: 1.18
 author: loveese
+softdepend: [PlaceholderAPI]
 
 commands:
   register:

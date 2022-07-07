@@ -4,13 +4,13 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerCommandPreprocessEvent;
-import pl.loveese.AuthLo;
+import pl.loveese.WtfAuth;
 
 import java.util.UUID;
 
 public class onPlayerCommand implements Listener {
 
-    AuthLo plugin;
+    WtfAuth plugin;
 
     @EventHandler
     public void onPlayerCommand(PlayerCommandPreprocessEvent e) {

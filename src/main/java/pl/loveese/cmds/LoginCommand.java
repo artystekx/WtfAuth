@@ -8,16 +8,16 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 
-import pl.loveese.AuthLo;
+import pl.loveese.WtfAuth;
 import pl.loveese.events.onJoin;
 import pl.loveese.playerdata.PlayerData;
 
 public class LoginCommand implements CommandExecutor {
 
-    AuthLo plugin;
+    WtfAuth plugin;
     PlayerData pd;
 
-    public LoginCommand(AuthLo m) {
+    public LoginCommand(WtfAuth m) {
         plugin = m;
         m.getCommand("login").setExecutor(this);
 

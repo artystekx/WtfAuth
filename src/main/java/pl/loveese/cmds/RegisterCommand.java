@@ -7,16 +7,16 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import pl.loveese.AuthLo;
+import pl.loveese.WtfAuth;
 import pl.loveese.events.onJoin;
 import pl.loveese.playerdata.PlayerData;
 
 public class RegisterCommand implements CommandExecutor {
 
-    AuthLo plugin;
+    WtfAuth plugin;
     PlayerData pd;
 
-    public RegisterCommand(AuthLo m) {
+    public RegisterCommand(WtfAuth m) {
         plugin = m;
         m.getCommand("register").setExecutor(this);
 

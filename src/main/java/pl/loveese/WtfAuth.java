@@ -9,11 +9,11 @@ import pl.loveese.events.onJoin;
 import pl.loveese.events.onMove;
 import pl.loveese.playerdata.PlayerData;
 
-public class AuthLo extends JavaPlugin {
+public class WtfAuth extends JavaPlugin {
 
     PlayerData pd;
 
-    public AuthLo() {
+    public WtfAuth() {
         pd = PlayerData.getInstance();
     }
 
