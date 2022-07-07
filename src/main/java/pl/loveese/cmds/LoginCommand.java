@@ -8,16 +8,16 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 
-import pl.loveese.Main;
+import pl.loveese.AuthLo;
 import pl.loveese.events.onJoin;
 import pl.loveese.playerdata.PlayerData;
 
 public class LoginCommand implements CommandExecutor {
 
-    Main plugin;
+    AuthLo plugin;
     PlayerData pd;
 
-    public LoginCommand(Main m) {
+    public LoginCommand(AuthLo m) {
         plugin = m;
         m.getCommand("login").setExecutor(this);
 
@@ -39,13 +39,12 @@ public class LoginCommand implements CommandExecutor {
                     if(pass.equals(actualPass))	{
                         onJoin.loggetIn.put(uuid, true);
 
-                        p.sendMessage("§eZostales zalogowany!");
+                        p.sendMessage(plugin.getConfig().getString("Command.loginsucces").replace("&", ""));
                     } else {
-                        p.kickPlayer("§eZle wpisales haslo! \n§7Sprobuj ponownie!");
+                        p.kickPlayer(plugin.getConfig().getString("Command.errorpassword").replace("&", ""));
                     }
                 } else {
-                    p.sendMessage("§eNie jestes zarejestrowany!");
-                    p.sendMessage("§eUzyj komendy: §7/register haslo haslo");
+                    p.sendMessage("&eUzyj komendy: §7/register haslo haslo /n&eNie jestes zarejestrowany!");
                 }
             } else {
                 p.sendMessage("§eUzycie: §7/login haslo");

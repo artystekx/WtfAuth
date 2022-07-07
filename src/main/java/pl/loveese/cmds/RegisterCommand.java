@@ -7,16 +7,16 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import pl.loveese.Main;
+import pl.loveese.AuthLo;
 import pl.loveese.events.onJoin;
 import pl.loveese.playerdata.PlayerData;
 
 public class RegisterCommand implements CommandExecutor {
 
-    Main plugin;
+    AuthLo plugin;
     PlayerData pd;
 
-    public RegisterCommand(Main m) {
+    public RegisterCommand(AuthLo m) {
         plugin = m;
         m.getCommand("register").setExecutor(this);
 
@@ -39,15 +39,15 @@ public class RegisterCommand implements CommandExecutor {
 
                     onJoin.loggetIn.put(uuid, true);
 
-                    p.sendMessage("§eZostales zarejestrowany w bazie danych");
+                    p.sendMessage(plugin.getConfig().getString("Command.successregister").replace("&", ""));
                 } else {
-                    p.sendMessage("§cBlad! §eTe hasla sie nie zgadzaja");
+                    p.sendMessage(plugin.getConfig().getString("Command.passworderror").replace("&", ""));
                 }
             } else {
-                p.sendMessage("§7Uzycie: §e/register haslo haslo");
+                p.sendMessage(plugin.getConfig().getString("Command.usageregister").replace("&", ""));
             }
         } else {
-            p.sendMessage("§cBlad! §eJuz jestes zarejestrowany");
+            p.sendMessage(plugin.getConfig().getString("Command.playerregister").replace("&", ""));
         }
 
         return false;

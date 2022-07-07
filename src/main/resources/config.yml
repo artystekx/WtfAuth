@@ -1,2 +1,9 @@
 Command:
   nologin: "&cNie jesteś zalogowany"
+  succesregister: "&eZostales zarejestrowany w bazie danych"
+  passworderror: "&cBlad! §eTe hasla sie nie zgadzaja"
+  usageregister: "&7Uzycie: §e/register haslo haslo"
+  playerregister: "&cBlad! §eJuz jestes zarejestrowany"
+  loginsucces: "&eZostales zalogowany!"
+  errorpassword: "&eZle wpisales haslo! \n&7Sprobuj ponownie!"
+  noregister: "&eUzyj komendy: &7/register haslo haslo /n&eNie jestes zarejestrowany!"

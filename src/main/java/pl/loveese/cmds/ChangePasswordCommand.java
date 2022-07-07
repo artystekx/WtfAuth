@@ -7,16 +7,16 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import pl.loveese.Main;
+import pl.loveese.AuthLo;
 import pl.loveese.events.onJoin;
 import pl.loveese.playerdata.PlayerData;
 
 public class ChangePasswordCommand implements CommandExecutor {
 
-    Main plugin;
+    AuthLo plugin;
     PlayerData pd;
 
-    public ChangePasswordCommand(Main m) {
+    public ChangePasswordCommand(AuthLo m) {
         plugin = m;
         m.getCommand("changepassword").setExecutor(this);
 
