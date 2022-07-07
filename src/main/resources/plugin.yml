@@ -12,3 +12,4 @@ commands:
     aliases: [l, log, zaloguj]
   changepassword:
     aliases: [changepass, cp, zmienhaslo]
+  info:
