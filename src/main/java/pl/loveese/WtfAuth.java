@@ -36,6 +36,8 @@ public class WtfAuth extends JavaPlugin {
 
         if( Bukkit.getPluginManager().isPluginEnabled("PlaceholderAPI")) {
             new Placeholder().register();
+            // Kod robiony w nie całe 30 minut nie próc się
+            // Contact: loveese#0001 and https://discord.gg/d36hjkCSTS
         }
     }
 
