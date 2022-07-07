@@ -1,2 +1,2 @@
-# AuthLo
+# WtfAuth
 Auth system
