@@ -13,8 +13,6 @@ import org.bukkit.event.player.PlayerJoinEvent;
 
 public class onJoin implements Listener {
 
-    SpawnJoinData sd;
-
     public static Map<UUID, Boolean> loggetIn = new HashMap<UUID, Boolean>();
 
     @EventHandler
@@ -23,12 +21,5 @@ public class onJoin implements Listener {
         UUID uuid = p.getUniqueId();
 
         loggetIn.put(uuid, false);
-        double x = sd.getData().getDouble("spawn.x");
-        double y = sd.getData().getDouble("spawn.y");
-        double z = sd.getData().getDouble("spawn.z");
-
-        String world = sd.getData().getString("spawn.world");
-
-        p.teleport(new Location(Bukkit.getWorld(world), x, y ,z));
     }
 }

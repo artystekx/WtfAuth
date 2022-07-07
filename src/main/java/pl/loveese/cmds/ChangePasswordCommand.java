@@ -41,18 +41,18 @@ public class ChangePasswordCommand implements CommandExecutor {
                         pd.getData().set(uuid + ".pass", new2);
                         pd.saveData();
 
-                        p.sendMessage("§ePomyslnie zmieniles haslo!");
+                        p.sendMessage(plugin.getConfig().getString("Command.succeschangepass").replace("&", ""));
                     } else {
-                        p.kickPlayer("§eTwoje hasla sie nie zgadzaja!");
+                        p.kickPlayer(plugin.getConfig().getString("Command.yourpassword").replace("&", ""));
                     }
                 } else {
-                    p.sendMessage("§eTwoje stare haslo sie nie zgadza!");
+                    p.sendMessage(plugin.getConfig().getString("Command.yourpass").replace("&", ""));
                 }
             } else {
-                p.sendMessage("§ePoprawne uzycie: /changepassword starehaslo nowehaslo nowehaslo");
+                p.sendMessage(plugin.getConfig().getString("Command.changepassusage").replace("&", ""));
             }
         } else {
-            p.sendMessage("§eAby zmienic haslo musisz byc zalogowanym!");
+            p.sendMessage(plugin.getConfig().getString("Command.changepasslogin").replace("&", ""));
         }
 
         return false;

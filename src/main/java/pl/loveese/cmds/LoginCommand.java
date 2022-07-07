@@ -44,13 +44,13 @@ public class LoginCommand implements CommandExecutor {
                         p.kickPlayer(plugin.getConfig().getString("Command.errorpassword").replace("&", ""));
                     }
                 } else {
-                    p.sendMessage("&eUzyj komendy: §7/register haslo haslo /n&eNie jestes zarejestrowany!");
+                    p.sendMessage(plugin.getConfig().getString("Command.noregister").replace("&", ""));
                 }
             } else {
-                p.sendMessage("§eUzycie: §7/login haslo");
+                p.sendMessage(plugin.getConfig().getString("Command.usage").replace("&", ""));
             }
         } else {
-            p.sendMessage("§eZostales pomyslnie zalogowany!");
+            p.sendMessage(plugin.getConfig().getString("Command.succeslogin").replace("&", ""));
         }
         return false;
     }

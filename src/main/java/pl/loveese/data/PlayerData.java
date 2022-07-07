@@ -37,7 +37,7 @@ public class PlayerData {
                 path.mkdirs();
                 rfile.createNewFile();
             } catch(IOException e) {
-                Bukkit.getServer().getLogger().severe(ChatColor.RED + "Nie udalo sie stworzyc pliku data.yml");
+                Bukkit.getServer().getLogger().severe("data.yml");
             }
         }
         data = YamlConfiguration.loadConfiguration(rfile);
@@ -51,7 +51,7 @@ public class PlayerData {
         try {
             data.save(rfile);
         } catch(IOException e) {
-            Bukkit.getServer().getLogger().severe(ChatColor.YELLOW + "Nie udalo sie zapisac pliku data.yml - try again");
+            Bukkit.getServer().getLogger().severe("try again");
         }
     }
 

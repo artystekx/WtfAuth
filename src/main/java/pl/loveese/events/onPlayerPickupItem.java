@@ -18,7 +18,7 @@ public class onPlayerPickupItem implements Listener {
         UUID uuid = p.getUniqueId();
 
         if(onJoin.loggetIn.get(uuid) == false) {
-            e.setCancelled(Boolean.parseBoolean(plugin.getConfig().getString("Events.pickupitem")));
+            e.setCancelled(true);
         }
     }
 }

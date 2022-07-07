@@ -1,12 +1,16 @@
 Command:
-  nologin: "&cNie jesteś zalogowany"
-  succesregister: "&eZostales zarejestrowany w bazie danych"
-  passworderror: "&cBlad! §eTe hasla sie nie zgadzaja"
-  usageregister: "&7Uzycie: §e/register haslo haslo"
-  playerregister: "&cBlad! §eJuz jestes zarejestrowany"
-  loginsucces: "&eZostales zalogowany!"
-  errorpassword: "&eZle wpisales haslo! \n&7Sprobuj ponownie!"
-  noregister: "&eUzyj komendy: &7/register haslo haslo /n&eNie jestes zarejestrowany!"
-Events:
-  dropitem: true
-  pickupitem: true
+  nologin: "&cYou are not logged in"
+  succesregister: "&eZostales registered in the database"
+  passworderror: "&cBlad! §eThese passwords do not match"
+  usageregister: "&7Usage: §e / register password password"
+  playerregister: "&cError! §eYou are already registered"
+  loginsucces: "&eYou have been logged in!"
+  errorpassword: "&eYour password is incorrect! \n&7Please try again!"
+  noregister: "&eUse command: &7/register password password /n &eYou are not registered!"
+  usage: "&eUse: §7 / password"
+  succeslogin: "&eYou are logged in successfully!"
+  succeschangepass: "&eYou successfully changed your password!"
+  yourpassword: "&eYour passwords do not match!"
+  yourpass: "&eYour old password doesn't match!"
+  changepassusage: "&eCorrect use: / changepassword old password new password new password"
+  changepasslogin: "&e You must be logged in to change your password!"
