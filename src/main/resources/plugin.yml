@@ -10,5 +10,3 @@ commands:
   login:
   changepassword:
   info:
-  wtfauthadmin:
-    aliases: [waa, wa, adminauth]
