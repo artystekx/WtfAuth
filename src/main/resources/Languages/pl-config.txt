@@ -14,3 +14,6 @@ Command:
   yourpass: "&eTwoje stare haslo sie nie zgadza!"
   changepassusage: "&ePoprawne uzycie: /changepassword starehaslo nowehaslo nowehaslo"
   changepasslogin: "&eAby zmienic haslo musisz byc zalogowanym!"
+Message:
+  quit: "%wtfauth_nazwa% wyszedl z serwera"
+  join: "%wtfauth_nazwa% dolaczyl na serwer"
