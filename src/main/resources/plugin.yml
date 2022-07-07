@@ -1,0 +1,13 @@
+name: AuthLo
+version: '${project.version}'
+main: pl.loveese.Main
+api-version: 1.18
+author: loveese
+
+commands:
+  register:
+    aliases: [reg, zarejestruj]
+  login:
+    aliases: [l, log, zaloguj]
+  changepassword:
+    aliases: [changepass, cp, zmienhaslo]
