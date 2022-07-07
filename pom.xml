@@ -6,7 +6,7 @@
 
     <groupId>pl.loveese</groupId>
     <artifactId>WtfAuth</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0-BETA</version>
     <packaging>jar</packaging>
 
     <name>WtfAuth</name>
