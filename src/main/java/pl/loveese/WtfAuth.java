@@ -26,6 +26,7 @@ public class WtfAuth extends JavaPlugin {
         new ChangePasswordCommand(this);
         new InfoCommand(this);
 
+
         getServer().getPluginManager().registerEvents(new onJoin(), this);
         getServer().getPluginManager().registerEvents(new onMove(), this);
         getServer().getPluginManager().registerEvents(new onPlayerDropItem(), this);
