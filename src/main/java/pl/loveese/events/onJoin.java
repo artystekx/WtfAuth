@@ -25,6 +25,11 @@ public class onJoin implements Listener {
 
         loggetIn.put(uuid, false);
 
+        p.sendTitle(plugin.getConfig().getString("Command.welcometitle").replace("&", "§"), plugin.getConfig().getString("Command.welcomesubtitle").replace("&", "§"));
+        p.sendMessage(" ");
+        p.sendMessage(plugin.getConfig().getString("Command.welcomee").replace("&", "§"));
+        p.sendMessage(" ");
+
         e.setJoinMessage(plugin.getConfig().getString("Message.join").replace("&", "§"));
     }
 }
