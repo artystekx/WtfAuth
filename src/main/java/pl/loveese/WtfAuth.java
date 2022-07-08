@@ -32,6 +32,7 @@ public class WtfAuth extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new onPlayerDropItem(), this);
         getServer().getPluginManager().registerEvents(new onPlayerPickupItem(), this);
         getServer().getPluginManager().registerEvents(new onQuit(), this);
+        getServer().getPluginManager().registerEvents(new onChat(), this);
 
         if( Bukkit.getPluginManager().isPluginEnabled("PlaceholderAPI")) {
             new Placeholder().register();
