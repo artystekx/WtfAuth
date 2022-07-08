@@ -14,6 +14,9 @@ Command:
   yourpass: "&eTwoje stare haslo sie nie zgadza!"
   changepassusage: "&ePoprawne uzycie: /changepassword starehaslo nowehaslo nowehaslo"
   changepasslogin: "&eAby zmienic haslo musisz byc zalogowanym!"
+  welcometitle: "&eLOGOWANIE"
+  welcomesubtitle: "&6Login System"
+  welcomee: "&6&lLOGOWANIE \n&eRegister /register <haslo> <haslo>\n&eChangePass /changepass <starehaslo> <nowehaslo> <nowehaslo>\n&e/login <haslo>"
 Message:
   quit: "%wtfauth_nazwa% wyszedl z serwera"
   join: "%wtfauth_nazwa% dolaczyl na serwer"

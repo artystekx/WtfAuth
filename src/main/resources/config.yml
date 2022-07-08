@@ -14,6 +14,9 @@ Command:
   yourpass: "&eYour old password doesn't match!"
   changepassusage: "&eCorrect use: / changepassword old password new password new password"
   changepasslogin: "&e You must be logged in to change your password!"
+  welcometitle: "&eWtfAuth"
+  welcomesubtitle: "§6Login system"
+  welcomee: "&6&lLOGIN \n&eRegister /register <password> <password>\n&eChangePass /changepass <passworldold> <passwordnew> <passwordnew>\n&e/login <password>"
 Message:
   quit: "%wtfauth_nazwa% quit server"
   join: "%wtfauth_nazwa% joined server"
