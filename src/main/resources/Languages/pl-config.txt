@@ -17,6 +17,7 @@ Command:
   welcometitle: "&eLOGOWANIE"
   welcomesubtitle: "&6Login System"
   welcomee: "&6&lLOGOWANIE \n&eRegister /register <haslo> <haslo>\n&eChangePass /changepass <starehaslo> <nowehaslo> <nowehaslo>\n&e/login <haslo>"
+  onchat: "Nie jestes zalogowany"
 Message:
   quit: "%wtfauth_nazwa% wyszedl z serwera"
   join: "%wtfauth_nazwa% dolaczyl na serwer"
