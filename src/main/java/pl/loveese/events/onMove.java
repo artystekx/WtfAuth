@@ -6,8 +6,11 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerMoveEvent;
+import pl.loveese.WtfAuth;
 
 public class onMove implements Listener {
+
+    WtfAuth plugin;
 
     @EventHandler
     public void onPlayerMove(PlayerMoveEvent e) {
@@ -16,6 +19,7 @@ public class onMove implements Listener {
 
         if(onJoin.loggetIn.get(uuid) == false) {
             e.setCancelled(true);
+            p.sendMessage(plugin.getConfig().getString("Command.onmove"));
         }
     }
 }

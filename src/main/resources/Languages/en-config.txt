@@ -18,6 +18,7 @@ Command:
    welcomesubtitle: "§6Login system"
    welcomee: "&6&lLOGIN \n&eRegister /register <password> <password>\n&eChangePass /changepass <passworldold> <passwordnew> <passwordnew>\n&e/login <password>"
    onchat: "You are not login"
+   onmove: "§ePls use /login <password> or /register <password> <password>"
 Message:
   quit: "%wtfauth_nazwa% quit server"
   join: "%wtfauth_nazwa% joined server"
